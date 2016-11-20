@@ -1,0 +1,264 @@
+\documentclass[a4paper,10pt]{article}
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+
+\usepackage{xcolor}
+\usepackage{sectsty}
+\chapterfont{\color{blue}}  % sets colour of chapters
+\sectionfont{\color{cyan}}  % sets colour of sections
+\subsectionfont{\color{blue}}  % sets colour of sections
+
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand{\myfullname}{Md. Badi-Uz-Zaman-Shajib}
+\newcommand{\du}{University of Dhaka}
+\newcommand{\shaheen}{B.A.F. Shaheen College}
+\newcommand{\bd}{Bangladesh}
+\newcommand{\fathername}{Md. Rafiqul Islam}
+\newcommand{\mothername}{Karuna Begum}
+\newcommand{\subcse}{Computer Science And Engineering}
+\newcommand{\kslwithlink}{\textsc{\href{www.konasl.com}{Kona Software Lab Ltd.}}}
+\newcommand{\revewithlink}{\textsc{\href{www.revesoft.com/}{Reve Systems}}}
+
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge \myfullname
+	}\par}
+
+
+\par{\centering
+		{
+		 \bf{mail}: \href{mailto:mbzshajib@gmail.com}{mbzshajib@gmail.com}\\
+		 \bf{phone} : +88 016 111 20220\\
+		 \bf{skype}: mbzshajib,\\
+		 \bf{linkedin}: \href{https://www.linkedin.com/in/mbzshajib}{mbzshajib}\\
+	}\bigskip\par}
+%--------------------SECTIONS-----------------------------------
+\section*{Objective}
+\paragraph{}
+\textbf{Perform some extra-ordinary contribution to the Modern Science and Computation.}
+\section*{Work Experience}
+\begin{tabular}{r|p{12.5cm}}					  
+\textbf{Sept 2013-Present}		&\textsc{Engineer} at \kslwithlink\\
+							&\textbf{September, 2013 to Present.}\\\\
+							
+\textbf{Responsibilitis}	&Currently working as Technical Lead.\\\\
+							&Study and analyze specifications, requierment analysis with specification compliance, design and develop new product (service based product), customization of existing product according to client requierment.\\\\
+							&Performance Analysis of the system. System-wide fail analysis and improvement scope finding. Central log management.\\\\
+							&Server manage and maintain, system automation, sorce code review.\\\\
+							&Provide traing to new team-mates and collegues.\\\\
+							&Visited South Korea several times for development, training, live server manage and maintain, system performance analysis.\\						
+\end{tabular}
+\section*{Technical Skills}
+
+\begin{tabular}{r|p{12.5cm}}
+	\textbf{Programming}				&\textbf{Java, C, Groovy, Python, PHP, HTML, JavaScript, Shell Script.} \\
+	\textbf{Languages}					&\\\\
+	\textbf{Frameworks \& others}		&\textbf{Spring.} \\\\
+	\textbf{ORM Tools}					&\textbf{Hibernate, JPA, MyBatis.} \\\\
+	\textbf{DataBase}					&\textbf{Oracle (11g), MySQL, SQLite.} \\\\
+	\textbf{Build Tools}				&\textbf{Maven, Gradle.} \\\\
+	\textbf{Other Tools}				&\textbf{ELK Stack, Jasper Report, REST, Load balancing.} \\\\
+	\textbf{SCMs}						&\textbf{GIT.} \\\\
+	\textbf{Web Servers}				&\textbf{ Apache2, Tomcat, Wildfly.} \\\\
+	\textbf{IDEs}						&\textbf{Intelij IDEA, Netbeans, Eclipse, Visual Studio.} \\\\
+	\textbf{Software}					&\textbf{Micro Service Architecture, System Automation,Agile Development.}\\
+	\textbf{Development}				&\textbf{Design Pattern, Anti-Patterns, Source Code Convension, Re­factoring, Code Smells.} \\\\
+	\textbf{Other Technology}			&\textbf{Cryptography, Smart Card Security, Payment Security, PKCS11, PKCS7, CA, ASN1, Host Card Emulation (HCE), Mobile Payment, Apple Pay, EMV, VISA, Mastercard, AMEX, PBOC, Payment Gateway, Clearing and Settlement.} \\
+    
+\end{tabular}
+\section*{Mentionable Projects}
+\subsection*{Kona Pay PaaS}
+\begin{tabular}{r|p{13cm}}
+\textbf{Summary}&\textbf{Kona Pay PaaS} is a micro-service payment platform designed to be used as service provider. This is a complete secure payment system, with HCE payment (Do-N Card) and KonaPay Platform (that includes EMV standard and PKI Base security). Mobile app is the end entity here (Client), Mobile app helps clients to enable multiple credit cards and diverse value-added services. It dynamically loads the card from the cloud and serve the purpose of client.\\\\
+
+\textbf{Technology}& \textbf{Spring, Hibernate, MyBatis, Oracle, MySQL, Shell Script, Gradle, Groovy, Tomcat8, Wildfly, HA Proxy, PKCS11,Smart Card, HCE, Oracle VM, System Automation, Micro Service}. \\
+\end{tabular}
+
+\subsection*{Kona Money}
+\begin{tabular}{r|p{13cm}}
+\textbf{Summary}&\textbf{Kona Money} is a deployment of \textbf{Kona Pay PaaS}. This is a payment system that is running in South Korea for secured HCE based payment. Using \textbf{Kona Pay PaaS} different issuer, merchant and acquirer.\\\\
+
+\textbf{Technology}& \textbf{Spring, Hibernate, MyBatis, Oracle, MySQL, Shell Script, Gradle, Groovy, Tomcat8, Wildfly, HA Proxy, PKCS11,Smart Card, HCE, Oracle VM, System Automation, Micro Service}. \\    
+\end{tabular}
+
+\subsection*{Kona-EVT}
+\begin{tabular}{r|p{13cm}}
+\textbf{Summary}&Kona-EVT (Kona EMV Verification Tool) tests a personalized EMV card. After personalization of an EMV card there needs to verify different data elements of the card according to the specifications of payment brands like Visa, MasterCard etc. Kona EMV Verification tool (Kona-EVT) fulfills that purpose. \\\\
+\textbf{Technology}& \textbf{Jave SE, SQLite, File Base Storage, Smart Card}.
+\end{tabular}
+
+\subsection*{K-CPS}
+\begin{tabular}{r|p{13cm}}
+\textbf{Summary}&K-CPS is a smart card personalization system mainly targeted for banking payment cards. It can personalize cards from all global payment brands like Visa, MasterCard, Amex etc. At the same time it can perso other applications for JavaCards. For data preparation and personalization, it uses Global Platform specification. K-CPS has seamless integration with major Perso machines.\\\\
+\textbf{Technology}& \textbf{Spring, MyBatis, MySQL, Oracle, Smart Card}.
+\end{tabular}
+
+\subsection*{K-KMS}
+\begin{tabular}{r|p{13cm}}
+\textbf{Summary}&\emph{K-KMS} is Kona Key Management System. For cryptography there use a different types of keys (DES, RSA, AES etc.). These keys's values are stored inside HSM (Hardware Security Module). To manage these keys and integrate with different HSM this KMS is used. This has been developed on specification given by Global Platform.\\\\
+\textbf{Technology}& \textbf{Spring, MyBatis, MySQL, Oracle, Smart Card}.
+\end{tabular}
+
+\bigskip
+\bigskip
+\section*{Education}
+\begin{tabular}{r|l}
+\\
+\textbf{M.S. (2013-2015)}		&\textbf{MASTER of SCIENCE} in \textsc{\subcse},\\
+							&\textsc{\du}, \bd,\\
+							&CGPA: 3.54 out of 4.0, Passing Year 2015.\\\\
+							
+\textbf{B.S. (2009-2013)}		&\textbf{BACHELOR of SCIENCE} in \textsc{\subcse}, \\
+							&\textsc{\du}, \bd,\\
+							&CGPA: 3.06 out of 4.0, Passing Year 2013.\\\\
+
+\textbf{H.S.C. (2006-2007)}		&\textbf{Secondary School Certificate} in \textsc{Science}, \\
+							&\textsc{\shaheen}, Kurmitola, \bd,\\
+							&CGPA: 5.00 out of 5.00, Passing Year 2008.\\\\
+							
+\textbf{S.S.C. (2004-2005)}		&\textbf{Higher Secondary School Certificate} in \textsc{Science}, \\
+							&\textsc{\shaheen}, Chaittagong, \bd,\\
+							&CGPA: 5.00 out of 5.00, Passing Year 2006.\\
+
+\end{tabular}
+
+
+%\section*{Acedimic Researches and Projects}
+%\subsection*{\textsc{Researches}}
+%\begin{tabular}{r|p{13cm}}
+%\textbf{Data Mining and}		&Finding interesting patterns over mass data,CLOSE set mining, MAX Pattern mining, Stream Mining\\
+%								&Uncertain Data, Noise Reduction from data\\
+%
+%
+%\end{tabular}
+%
+%\subsection*{\textsc{Projects}}
+%\begin{tabular}{r|p{13cm}}
+%\textbf{CSEDU Interaction}		&An Android Application and server to maintain communication and maintain\\
+%								&interactions between stududents, teachers and stuffs.\\
+%\textbf{Tecnology Used}			&Android, PHP, MySQL, HTML, CSS\\\\
+%
+%\textbf{LMS}					&Library management system target to use by both Librarian and Readers\\
+%\textbf{Tecnology Used}			&Java SE, MySQL, HTML, CSS\\\\
+%
+%
+%\textbf{DF-Storage}				&Distributed File Storage System.\\
+%\textbf{Tecnology Used}			&Java SE\\\\
+%
+%\end{tabular}
+\section*{Publications}
+
+\begin{tabular}{r|l}
+							&\textbf{An Efficient Approach for Mining Frequent Patterns over Uncertain Data Streams},\\
+							&in \textsc{28\textsuperscript{th} International Conference on Tools with Artificial Intelligence (\href{http://www.ictai2016.com/}{ICTAI}) 2016},\\
+							&\textsc{November 6-8, 2016, San Jose, California, USA}.\\
+\end{tabular}
+
+\section*{Personal Information}
+
+\begin{tabular}{r|l}
+    \textsc{Father's Name:} & Md. Rafiqul Islam \\
+    \textsc{Mother's Name:} & Karuna Begum \\    
+    \textsc{Date of Birth:} & 08 February, 1991 \\
+    \textsc{Address:}   & 660/1, Ashkona, Dhaka, Bangladesh \\
+    \textsc{Phone:}     & +88 0161 11120220\\
+    \textsc{email:}     & \href{mailto:mbzshajib@gmail.com}{mbzshajib@gmail.com}  
+    
+\end{tabular}
+
+\section*{References}
+\begin{tabular}{r|l}
+	&\textbf{Minaoar Hossain Tanzil}\\
+			&\textbf{Deputy Managing Director}, \kslwithlink , \bd\\
+			&\bf{mail:} \href{mailto:minaoar@yahoo.com}{minaoar@yahoo.com}\\\\					
+
+	&\textbf{Dr. Chowdhury Farhan Ahmed} \\
+			&\textbf{Professor}, \du , \bd\\
+			&\bf{mail:} \href{mailto:farhan@du.ac.bd}{farhan@du.ac.bd}\\			
+
+
+\end{tabular}
+
+\section*{Other Interests}
+\begin{tabular}{r|l}
+\textbf{Hobby}							&Photography and Cycling\\\\
+\textbf{Games}							&Badminton, Table Tenis, Football\\\\
+\textbf{Interest}						&Politics of Indian sub-continent\\
+								
+    
+\end{tabular}
+\end{document}
