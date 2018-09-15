@@ -124,39 +124,63 @@
 	\textbf{IDEs}						&\textbf{Intelij IDEA, Eclipse, Visual Studio, IngeDev} \\
 	\textbf{Software}					&\textbf{Micro Service Architecture, System Automation, Agile.}\\
 	\textbf{Development}				&\textbf{Design Pattern, Anti-Patterns, Code Re­factoring, Application Logging.} \\
-	\textbf{Other Technology}			&\textbf{Cryptography, Smart Card Security, Payment Security, PKCS11, PKCS7, PCI/DSS CA, ASN1, Host Card Emulation (HCE), Mobile Payment, Apple Pay, EMV, VISA, Mastercard, Local EMV, Payment Gateway E-Commerce, Clearing and Settlement, QR Payment, EMV QR, DFS} \\
+	\textbf{Other Technology}			&\textbf{Cryptography, Smart Card Security, Payment Security, PKCS11, PKCS7, PCI/DSS CA, ASN1, Host Card Emulation (HCE), Mobile Payment, Apple Pay, EMV, VISA, Mastercard, Local EMV, Payment Gateway E-Commerce, Clearing and Settlement, QR Payment, EMV QR, DFS, Payment Fraud} \\
     
 \end{tabular}
 \section*{Projects}
-\subsection*{NexusPay}
+\subsection*{Digital Financial System}
 \begin{tabular}{r|p{13cm}}
-\textbf{Summary}&{\textsc{\href{https://www.dutchbanglabank.com/nexuspay/nexusPay.html}{NexusPay}}} is a digitalize payment platform of Dutch-Bangla Bank Ltd, Bangladesh. Digitization of debit/credit card, bank account, mobile banking (Rocket) etc, over HCE based on KonaPay payment platfrom and payment via most of the mediam is main strength. EMV-QR/NFC payment is one of the most advanced payment method has been introduced in this product.\\\\
+\textbf{Summary}&Digital Financial System aka \textbf{DFS} is another model of \textbf{KonaPay} that enables isuue and payment of virtual card to support traditional physical card payment, advanced NFC/QR based payment, mobile financial based USSD payment, e-commerce payment, value added payment PG payment etc.
+\\&I have worked Accounting and Payment part of the system.\\\\
 
-\textbf{Technology}& \textbf{Spring, Hibernate, Oracle, Shell Script, Gradle, Groovy, HA Proxy, Nginx PKCS#11, Smart Card, HCE, POS, QR Payment, EMV QR}. \\
+\textbf{Technology}& \textbf{Spring, Spring Batch, Hibernate, Oracle, Shell Script, Gradle, Point of Sales (POS), Groovy, HA Proxy, Nginx PKCS#11, Smart Card, HCE, POS, ISO 8583, QR Payment, EMV QR, Payment Processor, Accounting System}. \\
 \end{tabular}
 
-\subsection*{Kona Money}
+
+\subsection*{NexusPay}
 \begin{tabular}{r|p{13cm}}
-\textbf{Summary}&\textbf{Kona Money} is a deployment of \textbf{Kona Pay Platform}. This is a payment system that is running in South Korea for secured HCE based payment. Using \textbf{Kona Pay PaaS} different issuer, merchant and acquirer.\\\\
+\textbf{Summary}&{\textsc{\href{https://www.dutchbanglabank.com/nexuspay/nexusPay.html}{NexusPay}}} is a digitized payment platform of \textbf{Dutch-Bangla Bank Ltd, Bangladesh}. Digitization of existing debit/credit card, bank account, mobile banking (Rocket) to virtual card and link to existing account (core banking, mobile banking and credit card system), over KonaPay platform and payment via most of the payment-media. EMV-QR/NFC payment is one of the most advanced payment method has been introduced in this product in Bangladesh. Loyalty card management (prepaid-card version) has also been introduced in this product.
+\\&I have worked as Technical Project Manager in this project. My responsibility was to communicate client, design and customization product according to the requirement. Also guide POS development team to develop POS application for Ingenico and Nexgo devices\\\\
+\textbf{Technology}& \textbf{Spring, Hibernate, Oracle, Shell Script, Gradle, Point of Sales (POS), Groovy, HA Proxy, Nginx PKCS#11, Smart Card, HCE, POS, QR Payment, EMV QR, ISO 8583}. \\
+\end{tabular}
+
+\subsection*{KonaCard}
+\begin{tabular}{r|p{13cm}}
+\textbf{Summary}&{\textsc{\href{http://www.konacard.co.kr/}{KonaCard}}} is a deployment of \textbf{KonaPay} in South Korea. KonaPay has been customized to fit in a prepaid-business with integration of several leading acquierer and issuer in South Korea. It supports almost every south Korean Payment Card all over South Korea. It has both hardware and mobile application version.\\\\
+\\&I worked on payment module of this product.. \\\\
+
+\textbf{Technology}& \textbf{Spring, Hibernate, MyBatis, Oracle, MySQL, Shell Script, Gradle, Groovy, Tomcat8, Wildfly, HA Proxy, PKCS11,Smart Card, HCE, Oracle VM, System Automation, Micro Service, ISO 8583, POS}. \\    
+\end{tabular}
+
+
+\subsection*{KonaPay}
+\begin{tabular}{r|p{13cm}}
+\textbf{Summary}&\textbf{KonaPay} is a secure, fast and robust platform based on host card emulation (\textbf{HCE}) and \textbf{tokenization}. This is a core micro-service based platform that enables issuance and authorization of of virtual card that can be kept in mobile phone with highly secured and standard process. This platform can easily integrated with payment system, identity verification. This platform has specialization on payment platform - issuing and authorizing payment through NFC, e-commerce, qr payment and all other media of payment. This has compliance with standard specification (VISA/MasterCard etc).
+
+\\&Main role in this product was to read specification, design and develop the issuance and authorization part of virtual card. \\\\
+
 
 \textbf{Technology}& \textbf{Spring, Hibernate, MyBatis, Oracle, MySQL, Shell Script, Gradle, Groovy, Tomcat8, Wildfly, HA Proxy, PKCS11,Smart Card, HCE, Oracle VM, System Automation, Micro Service}. \\    
 \end{tabular}
 
 \subsection*{Kona-EVT}
 \begin{tabular}{r|p{13cm}}
-\textbf{Summary}&Kona-EVT (Kona EMV Verification Tool) tests a personalized EMV card. After personalization of an EMV card there needs to verify different data elements of the card according to the specifications of payment brands like Visa, MasterCard etc. Kona EMV Verification tool (Kona-EVT) fulfills that purpose. \\\\
+\textbf{Summary}&Kona-EVT (Kona EMV Verification Tool) tests a personalized EMV card. After personalization of an EMV card there needs to verify different data elements of the card according to the specifications of payment brands like Visa, MasterCard etc. Kona EMV Verification tool (Kona-EVT) fulfills that purpose.
+\\&Study specification and implement verification tool. Main responsibility was to implement specification.\\\\
 \textbf{Technology}& \textbf{Jave SE, SQLite, File Base Storage, Smart Card}.
 \end{tabular}
 
 \subsection*{K-CPS}
 \begin{tabular}{r|p{13cm}}
 \textbf{Summary}&K-CPS is a smart card personalization system mainly targeted for banking payment cards. It can personalize cards from all global payment brands like Visa, MasterCard, Amex etc. At the same time it can perso other applications for JavaCards. For data preparation and personalization, it uses Global Platform specification. K-CPS has seamless integration with major Perso machines.\\\\
+\\&I worked customization of this product. \\\\
 \textbf{Technology}& \textbf{Spring, MyBatis, MySQL, Oracle, Smart Card}.
 \end{tabular}
 
 \subsection*{K-KMS}
 \begin{tabular}{r|p{13cm}}
-\textbf{Summary}&\emph{K-KMS} is Kona Key Management System. For cryptography there use a different types of keys (DES, RSA, AES etc.). These keys's values are stored inside HSM (Hardware Security Module). To manage these keys and integrate with different HSM this KMS is used. This has been developed on specification given by Global Platform.\\\\
+\textbf{Summary}&\emph{K-KMS} is Kona Key Management System. For cryptography there use a different types of keys (DES, RSA, AES etc.). These keys's values are stored inside HSM (Hardware Security Module). To manage these keys and integrate with different HSM this KMS is used. This has been developed on specification given by Global Platform.
+\\&I worked customization and HSM integration. \\\\
 \textbf{Technology}& \textbf{Spring, MyBatis, MySQL, Oracle, Smart Card}.
 \end{tabular}
 
@@ -178,7 +202,7 @@
 							&CGPA: 5.00 out of 5.00, Passing Year 2008.\\\\
 							
 \textbf{S.S.C. (2004-2005)}		&\textbf{Higher Secondary School Certificate} in \textsc{Science}, \\
-							&\textsc{\shaheen}, Chaittagong, \bd,\\
+							&\textsc{\shaheen}, Chittagong, \bd,\\
 							&CGPA: 5.00 out of 5.00, Passing Year 2006.\\
 
 \end{tabular}
@@ -213,6 +237,15 @@
 							&\textbf{An Efficient Approach for Mining Frequent Patterns over Uncertain Data Streams},\\
 							&in \textsc{28\textsuperscript{th} International Conference on Tools with Artificial Intelligence (\href{http://www.ictai2016.com/}{ICTAI}) 2016},\\
 							&\textsc{November 6-8, 2016, San Jose, California, USA}.\\
+\end{tabular}
+
+\section*{Training}
+
+\begin{tabular}{r|p{16cm}}
+							&\textbf{January 2014}\\
+							&Participated in a professional training program on EMV, Payment Security Smart Card organized by Kona International at Seoul, South Korea.\\
+							&\textbf{March 2017}\\
+							&Participated in a professional training program Embedded System Design and Develop on Point of Sales (POS) device organized by Ingenico, Singapore at Hanoi, Vietnam.\\
 \end{tabular}
 
 \section*{Personal Information}
