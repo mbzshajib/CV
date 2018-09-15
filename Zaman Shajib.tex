@@ -37,11 +37,11 @@
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 %%% modified for Karol Kozioł for ShareLaTeX use
 \setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-BoldFont = Fontin-Bold.otf,
-ItalicFont = Fontin-Italic.otf
-]
-{Fontin.otf}
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
 %%%
 
 %CV Sections inspired by: 
@@ -71,23 +71,10 @@ ItalicFont = Fontin-Italic.otf
 \newcommand{\fathername}{Md. Rafiqul Islam}
 \newcommand{\mothername}{Karuna Begum}
 \newcommand{\subcse}{Computer Science And Engineering}
-\newcommand{\kslwithlink}{\textsc{\href{www.konasl.com}{Kona Software Lab Ltd.}}}
+\newcommand{\kslwithlink}{\textsc{\href{www.konai.com}{Kona Software Lab Ltd.}}}
 \newcommand{\revewithlink}{\textsc{\href{www.revesoft.com/}{Reve Systems}}}
 
 \begin{document}
-
-%WATERMARK TEST [**not part of a CV**]---------------
-%\font\wm=''Baskerville:color=787878'' at 8pt
-%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
-%{\wm 
-%	\begin{textblock}{1}(0,0)
-%		\rotatebox{-90}{\parbox{500mm}{
-%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
-%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
-%		}
-%	}
-%	\end{textblock}
-%}
 
 \pagestyle{empty} % non-numbered pages
 
@@ -112,45 +99,45 @@ ItalicFont = Fontin-Italic.otf
 \textbf{Perform some extra-ordinary contribution to the Modern Science and Computation.}
 \section*{Work Experience}
 \begin{tabular}{r|p{12.5cm}}					  
-\textbf{Sept 2013-Present}		&\textsc{Engineer} at \kslwithlink\\
+\textbf{Sept 2013-Present}		&\textsc{Sr. Software Engineer} at \kslwithlink\\
 							&\textbf{September, 2013 to Present.}\\\\
 							
-\textbf{Responsibilitis}	&Currently working as Technical Lead.\\\\
-							&Study and analyze specifications, requierment analysis with specification compliance, design and develop new product (service based product), customization of existing product according to client requierment.\\\\
-							&Performance Analysis of the system. System-wide fail analysis and improvement scope finding. Central log management.\\\\
-							&Server manage and maintain, system automation, sorce code review.\\\\
-							&Provide traing to new team-mates and collegues.\\\\
-							&Visited South Korea several times for development, training, live server manage and maintain, system performance analysis.\\						
+\textbf{Responsibilitis}	& -Study and analyze specifications, requierment analysis with specification compliance, security compliance, product conceptualization, design and develop, customization of existing product according to client requierment.\\
+							& -Performance analysis and improvement of the system. System-wide fail analysis and finding improvement-scope. Central log management.\\
+							& -Server manage and maintain, system automation, sorce code review.\\
+							& -Provide traing to new team-mates and collegues.\\
+							& -Visited South Korea several times for development, training, live server manage and maintain, system performance analysis.\\						
 \end{tabular}
 \section*{Technical Skills}
 
 \begin{tabular}{r|p{12.5cm}}
-	\textbf{Programming}				&\textbf{Java, C, Groovy, Python, PHP, HTML, JavaScript, Shell Script.} \\
-	\textbf{Languages}					&\\\\
-	\textbf{Frameworks \& others}		&\textbf{Spring.} \\\\
-	\textbf{ORM Tools}					&\textbf{Hibernate, JPA, MyBatis.} \\\\
-	\textbf{DataBase}					&\textbf{Oracle (11g), MySQL, SQLite.} \\\\
-	\textbf{Build Tools}				&\textbf{Maven, Gradle.} \\\\
-	\textbf{Other Tools}				&\textbf{ELK Stack, Jasper Report, REST, Load balancing.} \\\\
-	\textbf{SCMs}						&\textbf{GIT.} \\\\
-	\textbf{Web Servers}				&\textbf{ Apache2, Tomcat, Wildfly.} \\\\
-	\textbf{IDEs}						&\textbf{Intelij IDEA, Netbeans, Eclipse, Visual Studio.} \\\\
+	\textbf{Programming}				&\textbf{Java, C, Groovy, Python, HTML, JavaScript, Shell Script.} \\
+	\textbf{Languages}					&\\
+	\textbf{Frameworks \& others}		&\textbf{Spring, Ingenico Framework T2, Tetra} \\
+	\textbf{ORM Tools}					&\textbf{Hibernate, JPA, MyBatis.} \\
+	\textbf{DataBase}					&\textbf{Oracle(11g), MySQL} \\
+	\textbf{Build Tools}				&\textbf{Maven, Gradle.} \\
+	\textbf{Other Tools}				&\textbf{ELK Stack, Jasper Report, REST, Load balancing.} \\
+	\textbf{SCMs}						&\textbf{GIT.} \\
+	\textbf{Web Servers}				&\textbf{ Apache2, Tomcat, Wildfly.} \\
+	\textbf{Embedded System}			&\textbf{ POS Machine - Ingenico Verifone (V675), Nexgo} \\
+	\textbf{IDEs}						&\textbf{Intelij IDEA, Eclipse, Visual Studio, Ingedev} \\
 	\textbf{Software}					&\textbf{Micro Service Architecture, System Automation,Agile Development.}\\
-	\textbf{Development}				&\textbf{Design Pattern, Anti-Patterns, Source Code Convension, Re­factoring, Code Smells.} \\\\
-	\textbf{Other Technology}			&\textbf{Cryptography, Smart Card Security, Payment Security, PKCS11, PKCS7, CA, ASN1, Host Card Emulation (HCE), Mobile Payment, Apple Pay, EMV, VISA, Mastercard, AMEX, PBOC, Payment Gateway, Clearing and Settlement.} \\
+	\textbf{Development}				&\textbf{Design Pattern, Anti-Patterns, Code Re­factoring, Application Logging.} \\
+	\textbf{Other Technology}			&\textbf{Cryptography, Smart Card Security, Payment Security, PKCS11, PKCS7, PCI/DSS CA, ASN1, Host Card Emulation (HCE), Mobile Payment, Apple Pay, EMV, VISA, Mastercard, AMEX, PBOC, Payment Gateway, Clearing and Settlement, QR Payment, EMV QR} \\
     
 \end{tabular}
-\section*{Mentionable Projects}
-\subsection*{Kona Pay PaaS}
+\section*{Projects}
+\subsection*{NexusPay}
 \begin{tabular}{r|p{13cm}}
-\textbf{Summary}&\textbf{Kona Pay PaaS} is a micro-service payment platform designed to be used as service provider. This is a complete secure payment system, with HCE payment (Do-N Card) and KonaPay Platform (that includes EMV standard and PKI Base security). Mobile app is the end entity here (Client), Mobile app helps clients to enable multiple credit cards and diverse value-added services. It dynamically loads the card from the cloud and serve the purpose of client.\\\\
+\textbf{Summary}&{\textsc{\href{https://www.dutchbanglabank.com/nexuspay/nexusPay.html}{NexusPay}}} is a digitalize payment platform of Dutch-Bangla Bank Ltd, Bangladesh. Digitization of debit/credit card, bank account, mobile banking (Rocket) etc, over HCE based on KonaPay payment platfrom and payment via most of the mediam is main strength. EMV-QR/NFC payment is one of the most advanced payment method has been introduced in this product.\\\\
 
-\textbf{Technology}& \textbf{Spring, Hibernate, MyBatis, Oracle, MySQL, Shell Script, Gradle, Groovy, Tomcat8, Wildfly, HA Proxy, PKCS11,Smart Card, HCE, Oracle VM, System Automation, Micro Service}. \\
+\textbf{Technology}& \textbf{Spring, Hibernate, Oracle, Shell Script, Gradle, Groovy, HA Proxy, Nginx PKCS#11, Smart Card, HCE, POS, QR Payment, EMV QR}. \\
 \end{tabular}
 
 \subsection*{Kona Money}
 \begin{tabular}{r|p{13cm}}
-\textbf{Summary}&\textbf{Kona Money} is a deployment of \textbf{Kona Pay PaaS}. This is a payment system that is running in South Korea for secured HCE based payment. Using \textbf{Kona Pay PaaS} different issuer, merchant and acquirer.\\\\
+\textbf{Summary}&\textbf{Kona Money} is a deployment of \textbf{Kona Pay Platform}. This is a payment system that is running in South Korea for secured HCE based payment. Using \textbf{Kona Pay PaaS} different issuer, merchant and acquirer.\\\\
 
 \textbf{Technology}& \textbf{Spring, Hibernate, MyBatis, Oracle, MySQL, Shell Script, Gradle, Groovy, Tomcat8, Wildfly, HA Proxy, PKCS11,Smart Card, HCE, Oracle VM, System Automation, Micro Service}. \\    
 \end{tabular}
@@ -233,8 +220,8 @@ ItalicFont = Fontin-Italic.otf
 \begin{tabular}{r|l}
     \textsc{Father's Name:} & Md. Rafiqul Islam \\
     \textsc{Mother's Name:} & Karuna Begum \\    
-    \textsc{Date of Birth:} & 08 February, 1991 \\
-    \textsc{Address:}   & 660/1, Ashkona, Dhaka, Bangladesh \\
+    \textsc{Date of Birth:} & February 08, 1991 \\
+    \textsc{Address:}   & H-16, R-3/1, Block-A, Khaierteck, Turag (Uttara), Dhaka. \\
     \textsc{Phone:}     & +88 0161 11120220\\
     \textsc{email:}     & \href{mailto:mbzshajib@gmail.com}{mbzshajib@gmail.com}  
     
@@ -243,21 +230,20 @@ ItalicFont = Fontin-Italic.otf
 \section*{References}
 \begin{tabular}{r|l}
 	&\textbf{Minaoar Hossain Tanzil}\\
-			&\textbf{Deputy Managing Director}, \kslwithlink , \bd\\
+			&\textbf{Managing Director}, \kslwithlink , \bd\\
 			&\bf{mail:} \href{mailto:minaoar@yahoo.com}{minaoar@yahoo.com}\\\\					
 
-	&\textbf{Dr. Chowdhury Farhan Ahmed} \\
-			&\textbf{Professor}, \du , \bd\\
-			&\bf{mail:} \href{mailto:farhan@du.ac.bd}{farhan@du.ac.bd}\\			
+	&Professor \textbf{Md. Mustafizur Rahman} \\
+			&\textbf{Chairman, Depertment of Computer Science and Engineering}, \du , \bd\\
+			&\bf{mail:} \href{mailto:mustafiz@cse.univdhaka.edu}{mustafiz@cse.univdhaka.edu}\\			
 
 
 \end{tabular}
 
 \section*{Other Interests}
 \begin{tabular}{r|l}
-\textbf{Hobby}							&Photography and Cycling\\\\
-\textbf{Games}							&Badminton, Table Tenis, Football\\\\
-\textbf{Interest}						&Politics of Indian sub-continent\\
+\textbf{Games}							&Badminton, Table Tennis, Football\\\\
+\textbf{Interest}						&Photography, Politics of Indian sub-continent\\
 								
     
 \end{tabular}
